@@ -21,7 +21,7 @@ sudo apt-get install ubuntu-desktop -y
 echo "************************************************************************************************************************************"
 sudo apt-get install gnome-panel gnome-settings-daemon metacity nautilus gnome-terminal -y
 echo "************************************************************************************************************************************"
-sudo apt-get install vnc4server -y
+sudo apt install tightvncserver -y
 vncserver
 echo "************************************************************************************************************************************"
 sudo apt-get install gnome-core -y
