@@ -60,7 +60,8 @@ rm -rf bin
 rm -rf sam/.git
 git init
 git add .
-git commit "First"
-git remote add origin
-git push 
+git commit -m "First"
+git branch -M main
+git remote add origin https://github.com/Sammy970/sourcepex.git
+git push -u origin main
 echo " Thankyou for using !"
