@@ -52,4 +52,15 @@ rm -rf device/xiaomi/sdm660-common/.git
 rm -rf kernel/xiaomi/sdm660/.git
 rm -rf vendor/xiaomi/sdm660-common/.git
 rm -rf vendor/xiaomi/wayne-common/.git
+cd
+cd bin/build
+mv pex ~
+cd
+rm -rf bin
+rm -rf sam/.git
+git init
+git add .
+git commit "First"
+git remote add origin
+git push 
 echo " Thankyou for using !"
