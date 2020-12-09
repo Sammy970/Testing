@@ -47,3 +47,5 @@ git clone https://github.com/Jhonse02/a11-vendor vendor/xiaomi/
 git clone https://github.com/Jhonse02/android_kernel_xiaomi_whyred.git kernel/xiaomi/sdm660-kernel
 
 echo "********************************************************************************************************************************************************"
+source build/envsetup.sh
+lunch aosp_whyred-userdebug
