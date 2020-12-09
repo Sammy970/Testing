@@ -43,7 +43,7 @@ cd
 cd bin/build/pex
 git clone https://github.com/Jhonse02/a11-whyred device/xiaomi/whyred
 git clone https://github.com/Jhonse02/a11-sdm660 device/xiaomi/sdm660-common 
-git clone https://github.com/Jhonse02/a11-vendor vendor/xiaomi/sdm660 
+git clone https://github.com/Jhonse02/a11-vendor vendor/xiaomi/
 git clone https://github.com/Jhonse02/android_kernel_xiaomi_whyred.git kernel/xiaomi/sdm660-kernel
 
 echo "********************************************************************************************************************************************************"
