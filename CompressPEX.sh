@@ -5,6 +5,9 @@ tar -xf git-lfs-linux-amd64-v2.9.0.tar.gz
 cd
 git clone https://github.com/Sammy970/sourcepex.git sam
 cd 
+cd bin/build/pex
+rm -rf .repo
+cd 
 cd bin/build/
 tar cvzf source1.tar.gz pex
 tar cvzf source2.tar.gz source1.tar.gz
