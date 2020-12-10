@@ -41,11 +41,11 @@ repo sync -c -q --force-sync --optimized-fetch --no-tags --no-clone-bundle --pru
 echo "********************************************************************************************************************************************************"
 cd
 cd bin/build/lineage
-#git clone https://github.com/legionos-devices/device_xiaomi_jasmine_sprout.git device/xiaomi/jasmine_sprout
-#git clone https://github.com/legionos-devices/device_xiaomi_sdm660-common-jasmine.git device/xiaomi/sdm660-common 
-#git clone https://github.com/xiaomi-sdm660/android_vendor_xiaomi_sdm660-common.git vendor/xiaomi/sdm660-common 
-#git clone https://github.com/legionos-devices/kernel_xiaomi_sdm660-jasmine.git kernel/xiaomi/sdm660 
-#git clone https://github.com/xiaomi-sdm660/vendor_xiaomi_wayne-common.git vendor/xiaomi/wayne-common
+git clone https://github.com/legionos-devices/device_xiaomi_jasmine_sprout.git device/xiaomi/jasmine_sprout
+git clone https://github.com/legionos-devices/device_xiaomi_sdm660-common-jasmine.git device/xiaomi/sdm660-common 
+git clone https://github.com/xiaomi-sdm660/android_vendor_xiaomi_sdm660-common.git vendor/xiaomi/sdm660-common 
+git clone https://github.com/legionos-devices/kernel_xiaomi_sdm660-jasmine.git kernel/xiaomi/sdm660 
+git clone https://github.com/xiaomi-sdm660/vendor_xiaomi_wayne-common.git vendor/xiaomi/wayne-common
 echo "********************************************************************************************************************************************************"
 
 ccache -M 50G
