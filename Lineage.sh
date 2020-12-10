@@ -36,20 +36,20 @@ git config --global user.email "jainsamyak2002.sj@gmail.com"
 echo "********************************************************************************************************************************************************"
 cd 
 cd bin/build/lineage
-repo init -u git://github.com/LineageOS/android.git -b lineage-17.1
+repo init -u git://github.com/LineageOS/android.git -b lineage-18.0
 repo sync -c -q --force-sync --optimized-fetch --no-tags --no-clone-bundle --prune -j$(nproc --all)
 echo "********************************************************************************************************************************************************"
 cd
 cd bin/build/lineage
-git clone https://github.com/LineageOS/android_device_xiaomi_jasmine_sprout.git device/xiaomi/jasmine_sprout 
-git clone https://github.com/PixelExtended/device_xiaomi_sdm660-common.git device/xiaomi/sdm660-common 
+git clone https://github.com/legionos-devices/device_xiaomi_jasmine_sprout.git device/xiaomi/jasmine_sprout
+git clone https://github.com/legionos-devices/device_xiaomi_sdm660-common-jasmine.git device/xiaomi/sdm660-common 
 git clone https://github.com/xiaomi-sdm660/android_vendor_xiaomi_sdm660-common.git vendor/xiaomi/sdm660-common 
-git clone https://github.com/xiaomi-sdm660/android_kernel_xiaomi_sdm660.git kernel/xiaomi/sdm660 
-#git clone https://github.com/xiaomi-sdm660/vendor_xiaomi_wayne-common.git vendor/xiaomi/wayne-common
+git clone https://github.com/legionos-devices/kernel_xiaomi_sdm660-jasmine.git kernel/xiaomi/sdm660 
+git clone https://github.com/xiaomi-sdm660/vendor_xiaomi_wayne-common.git vendor/xiaomi/wayne-common
 echo "********************************************************************************************************************************************************"
 
 ccache -M 50G
 
-source build/envsetup.sh
-lunch lineage_jasmine_sprout-userdebug
-mka bacon -j6
+#source build/envsetup.sh
+#lunch lineage_jasmine_sprout-userdebug
+#mka bacon -j6
