@@ -16,3 +16,8 @@ cd sam/
 git lfs install
 git lfs track ".tar.gz"
 git lfs track "tar.gz"
+cd
+cd sam/
+git add .
+git commit -m "Whole PEX source in tar.gz"
+git push
