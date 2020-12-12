@@ -47,6 +47,10 @@ git clone https://github.com/xiaomi-sdm660/android_vendor_xiaomi_sdm660-common.g
 git clone https://github.com/xiaomi-sdm660/android_kernel_xiaomi_sdm660.git kernel/xiaomi/sdm660 
 git clone https://github.com/xiaomi-sdm660/vendor_xiaomi_wayne-common.git vendor/xiaomi/wayne-common
 echo "********************************************************************************************************************************************************"
+echo " So i have included device trees from PEX, so now the script will make the necessary changes and will open files for your which you need to edit manually "
+echo " You just need to change aosp to lineage, everyhwere you see it "
+echo " Press any key to Proceed "
+read proceed 
 cd
 cd bin/build/lineage/device/xiaomi/jasmine_sprout
 mv aosp_jasmine_sprout.mk lineage_jasmine_sprout.mk
@@ -56,6 +60,7 @@ nano lineage.dependencies
 nano Android.bp
 nano Android.mk
 nano AndroidProducts.mk
+nano BoardConfig.mk
 cd ..
 cd ..
 cd ..
