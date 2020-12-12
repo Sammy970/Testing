@@ -71,4 +71,4 @@ echo "**************************************************************************
 #mka bacon -j6
 echo " Everythng is done just go to your lineage folder which is under bin/build/lineage and just start to Build"
 echo " Thankyou for using "
-echo " https://github.com/Sammy970 "
+echo " You can check my github for more intresting scripts : https://github.com/Sammy970 "
