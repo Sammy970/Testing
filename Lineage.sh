@@ -41,15 +41,29 @@ repo sync -c -q --force-sync --optimized-fetch --no-tags --no-clone-bundle --pru
 echo "********************************************************************************************************************************************************"
 cd
 cd bin/build/lineage
-git clone https://github.com/legionos-devices/device_xiaomi_jasmine_sprout.git device/xiaomi/jasmine_sprout
-git clone https://github.com/legionos-devices/device_xiaomi_sdm660-common-jasmine.git device/xiaomi/sdm660-common 
+git clone https://github.com/PixelExtended/device_xiaomi_jasmine_sprout.git device/xiaomi/jasmine_sprout 
+git clone https://github.com/PixelExtended/device_xiaomi_sdm660-common.git device/xiaomi/sdm660-common 
 git clone https://github.com/xiaomi-sdm660/android_vendor_xiaomi_sdm660-common.git vendor/xiaomi/sdm660-common 
-git clone https://github.com/legionos-devices/kernel_xiaomi_sdm660-jasmine.git kernel/xiaomi/sdm660 
+git clone https://github.com/xiaomi-sdm660/android_kernel_xiaomi_sdm660.git kernel/xiaomi/sdm660 
 git clone https://github.com/xiaomi-sdm660/vendor_xiaomi_wayne-common.git vendor/xiaomi/wayne-common
 echo "********************************************************************************************************************************************************"
-
+cd
+cd bin/build/lineage/device/xiaomi/jasmine_sprout
+mv aosp_jasmine_sprout.mk lineage_jasmine_sprout.mk
+mv aosp.dependencies lineage.dependencies
+nano lineage_jasmine_sprout.mk
+nano lineage.dependencies
+nano Android.bp
+nano Android.mk
+nano AndroidProducts.mk
+cd ..
+cd ..
+cd ..
 ccache -M 50G
-
+echo "********************************************************************************************************************************************************"
 #source build/envsetup.sh
 #lunch lineage_jasmine_sprout-userdebug
 #mka bacon -j6
+echo " Everythng is done just go to your lineage folder which is under bin/build/lineage and just start to Build"
+echo " Thankyou for using "
+echo " https://github.com/Sammy970 "
