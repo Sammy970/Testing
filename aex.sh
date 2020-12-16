@@ -37,7 +37,7 @@ echo "**************************************************************************
 cd 
 cd bin/build/aex/
 repo init --depth=1 -u git://github.com/AospExtended/manifest.git -b 11.x
-repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
+repo sync -c -q --force-sync --optimized-fetch --no-tags --no-clone-bundle --prune -j$(nproc --all)
 echo "********************************************************************************************************************************************************"
 cd
 cd bin/build/aex/
