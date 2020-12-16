@@ -36,7 +36,7 @@ git config --global user.email "jainsamyak2002.sj@gmail.com"
 echo "********************************************************************************************************************************************************"
 cd 
 cd bin/build/aex/
-repo init --depth=1 -u git://github.com/AospExtended/manifest.git -b 11.x
+repo init --depth=1 -u git://github.com/AospExtended/manifest.git -b 10.x
 repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 echo "********************************************************************************************************************************************************"
 cd
