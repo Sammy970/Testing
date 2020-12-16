@@ -49,7 +49,7 @@ git clone https://github.com/OdSazib/vendor_xiaomi_wayne-common.git vendor/xiaom
 echo "********************************************************************************************************************************************************"
 
 cd
-cd bin/build/pex/device/xiaomi/jasmine_sprout/
+cd bin/build/aex/device/xiaomi/jasmine_sprout/
 mv awaken_jasmine_sprout.mk aosp_jasmine_sprout.mk
 mv awaken.dependencies aosp.dependencies
 nano aosp_jasmine_sprout.mk
