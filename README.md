@@ -1,9 +1,12 @@
 # Testing
 
 Hello Everyone !!
+________________________________________________________________
+NOTE : Lineage, AEX, EVO these scripts are for MI A2 Only
+If you want you can use these and modify it for your device.
+________________________________________________________________
 
-This is my testing repo in which I have made multiple scripts to sync, update, upgrade the environment etc that you will need for building a custom rom.
-Here you can currently see :
+This is my testing repo in which I have made multiple scripts regarding making custom roms and installing a desktop in a linux server.
 1. Lineage OS
 2. AEX 
 3. EVO 
